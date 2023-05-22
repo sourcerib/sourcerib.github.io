@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap");
+/*----------------------------------------------------------*/
+@import url("https://fonts.cdnfonts.com/css/counter-strike");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Fredoka", "Raleway", sans-serif;
+  font-weight: lighter;
+}
+
+/*----------------------------------------------------------*/
+body {
+  background-size: cover;
+}
+
+/*----------------------------------------------------------*/
+nav {
+  background-color: rgba(0, 0, 0, 0.8);
+  margin: 30px;
+  padding: 40px;
+}
+nav #navbar-logo {
+  margin-top: -10px;
+  float: left;
+  font-size: 48px;
+  text-decoration: none;
+  color: white;
+}
+nav #navbar {
+  list-style: none;
+  display: flex;
+  justify-content: end;
+  gap: 3em;
+}
+nav #navbar .navbar-item {
+  text-decoration: none;
+  color: gray;
+  font-size: 32px;
+  transition: 0.7s;
+}
+nav #navbar .navbar-item:hover {
+  color: rgb(170, 170, 170);
+}
+
+/*----------------------------------------------------------*/
+main #welcomeSection {
+  padding: 250px;
+  text-align: center;
+  color: white;
+}
+main #welcomeSection .welcomeHeading {
+  font-size: 70px;
+  margin-bottom: 23px;
+}
+main #welcomeSection .welcomeParagraph {
+  font-size: 22px;
+  margin-bottom: 23px;
+}
+main #welcomeSection .welcomeParagraph .enchanted-font {
+  font-family: "Counter-Strike", "Fredoka", "Raleway", sans-serif;
+}
+main #welcomeSection .btn {
+  margin-right: 10px;
+  border: none;
+  border-radius: 12px;
+  background-color: rgb(230, 230, 230);
+  font-size: 18px;
+  padding: 15px;
+  transition: 0.7s;
+}
+main #welcomeSection .btn:hover {
+  background-color: white;
+}
+main #welcomeSection .btn a {
+  text-decoration: none;
+  color: black;
+}
+
+/*----------------------------------------------------------*/
+main #sloganContainer {
+  padding: 100px;
+}
+main #sloganContainer #sloganBannerContainer {
+  position: relative;
+  text-align: center;
+}
+main #sloganContainer #sloganBannerContainer img {
+  width: 70%;
+  border-radius: 12px;
+}
+main #sloganContainer #sloganBannerContainer #slogan {
+  cursor: default;
+  color: white;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  font-size: 32px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.7s;
+}
+main #sloganContainer #sloganBannerContainer #slogan:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 12px;
+}
+main #about-us .row {
+  display: flex;
+  justify-content: center;
+}
+main #about-us .row .container {
+  cursor: default;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 1000px;
+  height: 300px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: rgb(202, 202, 202);
+  margin-bottom: 10px;
+  margin: 30px;
+  padding: 40px;
+  transition: 0.7s;
+}
+main #about-us .row .container:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+}
+main #about-us .row .container h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+main #about-us .row .container p {
+  font-size: 19px;
+}
+
+/*----------------------------------------------------------*/
+footer {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  margin: 30px;
+  padding: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+footer .footer-contact h3 {
+  font-size: 32px;
+}
+footer .footer-contact p {
+  margin: 5px 0;
+}
+footer .footer-follow ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+footer .footer-follow li {
+  display: inline-block;
+  margin-right: 10px;
+}
+footer .footer-info p {
+  margin: 10px 0;
+}
+footer .footer-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+footer .footer-info li {
+  display: inline-block;
+  margin-right: 10px;
+}
+footer .footer-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+footer .footer-nav li {
+  display: inline-block;
+  margin-right: 10px;
+}
+footer .footer-nav a {
+  color: #fff;
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */
