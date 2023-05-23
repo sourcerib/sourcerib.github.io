@@ -19,7 +19,6 @@ main {
         .welcomeParagraph {
 
             font-size: 22px;
-            margin-bottom: 23px;
 
             .enchanted-font {
 
@@ -56,4 +55,94 @@ main {
 
     }
 
+}
+
+
+
+@media only screen and (max-width: 480px) {
+
+    body {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    main {
+
+        #welcomeSection {
+    
+            padding: 43px;
+            color: white;
+    
+            .welcomeHeading {
+    
+                font-size: 40px;
+                text-align: left;
+                margin-bottom: 23px;
+    
+            }
+    
+            .welcomeParagraph {
+    
+                font-size: 15px;
+                margin-bottom: 23px;
+                text-align: left;
+    
+                .enchanted-font {
+    
+                    font-family: 'Counter-Strike', 'Fredoka', 'Raleway', sans-serif;
+    
+                }
+    
+            }
+    
+            .btn {
+    
+                float: left;
+                width:25em;
+                margin-bottom: 19px;
+                border: none;
+                border-radius: 12px;
+                background-color: rgb(230, 230, 230);
+                font-size: 14px;
+                padding: 15px;
+                transition: 0.7s;
+    
+                &:hover {
+    
+                    background-color: white;
+    
+                }
+    
+                a {
+    
+                    text-decoration: none;
+                    color: black;
+    
+                }
+    
+            }
+    
+        }
+    
+    }
+    
+}
+
+@media only screen and (max-width: 430px) {
+    main {
+
+        #welcomeSection {
+
+            .btn {
+    
+                width: 218px;
+
+            }
+
+        }
+
+    }
 }
