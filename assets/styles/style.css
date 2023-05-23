@@ -9,6 +9,10 @@
   font-weight: lighter;
 }
 
+::-webkit-scrollbar {
+  width: 0;
+}
+
 /*----------------------------------------------------------*/
 body {
   background-size: cover;
@@ -52,7 +56,20 @@ nav #navbar .navbar-item:hover {
   color: rgb(170, 170, 170);
 }
 
-@media only screen and (max-width: 480px) {
+@media (max-width: 480px) {
+  nav {
+    display: none;
+  }
+}
+@media (max-width: 1174px) {
+  nav #navbar-logo {
+    display: none;
+  }
+  nav #navbar {
+    justify-content: center;
+  }
+}
+@media (max-width: 847px) {
   nav {
     display: none;
   }
@@ -90,8 +107,8 @@ main #welcomeSection .btn a {
   color: black;
 }
 
-@media only screen and (max-width: 480px) {
-  body {
+@media (max-width: 480px) {
+  .body {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -132,9 +149,58 @@ main #welcomeSection .btn a {
     color: black;
   }
 }
-@media only screen and (max-width: 430px) {
+@media (max-width: 430px) {
   main #welcomeSection .btn {
     width: 218px;
+  }
+}
+@media (max-width: 1408px) {
+  main #welcomeSection {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  main #welcomeSection .welcomeHeading {
+    font-size: 52px;
+  }
+  main #welcomeSection .welcomeParagraph {
+    font-size: 16px;
+  }
+  main #welcomeSection .btn {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1174px) {
+  main #welcomeSection {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  main #welcomeSection .welcomeHeading {
+    font-size: 58px;
+  }
+  main #welcomeSection .welcomeParagraph {
+    font-size: 18px;
+  }
+}
+@media (max-width: 847px) {
+  .body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main #welcomeSection {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  main #welcomeSection .welcomeHeading {
+    font-size: 52px;
+  }
+  main #welcomeSection .welcomeParagraph {
+    font-size: 16.4px;
+  }
+  main #welcomeSection .btn {
+    font-size: 15px;
   }
 }
 /*----------------------------------------------------------*/
@@ -185,6 +251,7 @@ main #about-us .row .container {
   transition: 0.7s;
 }
 main #about-us .row .container:hover {
+  border-radius: 12px;
   background-color: rgba(0, 0, 0, 0.9);
   color: white;
 }
