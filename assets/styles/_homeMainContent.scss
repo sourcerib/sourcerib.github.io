@@ -1,0 +1,116 @@
+#main {
+
+    #welcomeSection {
+
+        display: flex;
+        flex-direction: column;
+        color: white;
+        padding: 1em;
+        height: 70vh;   
+        justify-content: center;
+
+        .welcomeHeading {
+
+            font-size: 2.8em;
+
+        }
+
+        .welcomeParagraph {
+
+            font-size: 1.3em;
+
+            br {
+
+                display: none;
+
+            }
+            
+        }
+
+        #btn-area {
+
+            display: flex;  
+            gap: 1em;
+
+            button {
+
+                cursor: pointer;
+                border: none;
+                border-radius: 9px;
+                padding: 11px;
+                font-size: 16px;
+
+            } 
+            
+        }
+
+    }
+    
+}
+
+@media only screen and (min-width: 768px) {
+    
+    #main {
+
+        #welcomeSection {
+
+            text-align: center;
+            align-items: center;
+
+            .welcomeHeading {
+
+                font-size: 52px;
+
+            }
+
+            .welcomeParagraph {
+
+                font-size: 1.2em;
+
+                br {
+
+                    display: block;
+
+                }
+
+            }
+
+            #btn-area {
+
+                button {
+
+                    font-size: 1.2em;
+
+                }
+
+            }
+
+        }
+
+    }
+    
+}
+
+@media only screen and (min-width: 1280px) { 
+
+    #main {
+
+        #welcomeSection {
+
+            .welcomeHeading {
+
+                font-size: 3.75em;
+
+            }
+
+            .welcomeParagraph {
+
+                font-size: 22px;
+
+            }
+
+        }
+
+    }
+
+}

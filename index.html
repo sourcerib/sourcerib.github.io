@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <html lang="en">
-    
+
     <head>
 
         <meta charset="UTF-8">
@@ -11,45 +11,77 @@
         <link rel="stylesheet" href="assets/styles/style.css">
 
         <link rel="icon" href="assets/images/titleLogo.png">
-
+        
         <title>SourceRiB - Home</title>
 
     </head>
 
-    <body class="body" style="background-image: url(assets/images/home-bg.png);">
+    <body id="homeBody" style="background-image: url(assets/images/bgHome.png);">
 
-        <nav role="navigation">
+        <header>
 
-            <a id="navbar-logo" href="/">SourceRiB</a>
+            <div id="humburgur-menu">
 
-            <ul id="navbar">
+                <button id="open-humburgur-menu-items" onclick="humburgur_menu()"><i class="fa-solid fa-bars"></i></button>
+                <button id="close-humburgur-menu-items" style="display: none;" onclick="humburgur_menu()"><i class="fa-solid fa-xmark"></i></button>
 
-                <li><a style="color: white;" class="navbar-item" href="/">Home</a></li>
-                <li><a class="navbar-item" href="about.html">About</a></li>
-                <li><a class="navbar-item" href="DOWNLOADS.html">Downloads</a></li>
-                <li><a class="navbar-item" href="blog.html">Blog</a></li>
-                <li><a class="navbar-item" href="category.html">Contact</a></li>
+            </div>
 
-            </ul>
+            <div id="humburgur-menu-items">
 
-        </nav>
+                <ul id="menu">
 
-        <br>
+                    <li><a style="color: white;" href="/" class="menu-item">Home</a></li>
+                    <li><a href="about.html" class="menu-item">About</a></li>
+                    <li><a href="DOWNLOADS.html" class="menu-item">Downloads</a></li>
+                    <li><a href="category.html" class="menu-item">Category</a></li>
 
-        <main role="main">
+                </ul>
+
+            </div>
+
+            <nav role="navigation">
+
+                <a href="/" id="navbar-logo">SourceRiB</a>
+
+                <ul id="navbar">
+
+                    <li><a style="color: white;" href="/" class="navbar-item">Home</a></li>
+                    <li><a href="about.html" class="navbar-item">About</a></li>
+                    <li><a href="DOWNLOADS.html" class="navbar-item">Downloads</a></li>
+                    <li><a href="category.html" class="navbar-item">Category</a></li>
+
+                </ul>
+
+            </nav>
+
+        </header>    
+
+        <main id="main" role="main">
 
             <section id="welcomeSection">
 
-                <h1 class="welcomeHeading">Revamp Your CS:S with Mods</h1>
-                <p class="welcomeParagraph">Download safe and exciting mods for your <span class="enchanted-font">Counter-Strike: Source</span> on our website today!</p>
-                <p style="margin-bottom: 23px;" class="welcomeParagraph">Elevate your gaming experience with just a few clicks.</p>
+                <h1 class="welcomeHeading">Revamp Your CS:S with Mods!</h1>
 
-                <button class="btn"><a href="about.html">Learn More</a></button>
-                <button class="btn"><a href="about.html">Download Beginner Pack</a></button>
+                <br>
+
+                <p class="welcomeParagraph">Download safe and exciting mods for your Counter-Strik: Source on our website!<br> Elevate your CS:S experience with just a few clicks</p>
+
+                <br>
+
+                <div id="btn-area">
+
+                    <a href="about.html"><button role="">Learn More</button></a>
+                    <a href="about.html"><button role="">Download Beginner Pack</button></a>
+
+                </div>
 
             </section>
 
         </main>
+
+        <script src="assets/scripts/main.js"></script>
+        <script src="https://kit.fontawesome.com/d2a8cdf847.js" crossorigin="anonymous"></script>
         
     </body>
 

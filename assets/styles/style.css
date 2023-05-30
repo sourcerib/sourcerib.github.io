@@ -1,7 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap");
-/*----------------------------------------------------------*/
-@import url("https://fonts.cdnfonts.com/css/counter-strike");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Raleway:wght@200&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -9,275 +6,225 @@
   font-weight: lighter;
 }
 
-::-webkit-scrollbar {
-  width: 0;
-}
-
-/*----------------------------------------------------------*/
 body {
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
 }
 
-@media only screen and (max-width: 480px) {
-  body {
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-    height: 100vh;
-  }
-}
-/*----------------------------------------------------------*/
-nav {
-  background-color: rgba(0, 0, 0, 0.8);
-  margin: 30px;
-  padding: 40px;
-}
-nav #navbar-logo {
-  margin-top: -10px;
-  float: left;
-  font-size: 48px;
-  text-decoration: none;
-  color: white;
-}
-nav #navbar {
-  list-style: none;
-  display: flex;
-  justify-content: end;
-  gap: 3em;
-}
-nav #navbar .navbar-item {
-  text-decoration: none;
-  color: gray;
-  font-size: 32px;
-  transition: 0.7s;
-}
-nav #navbar .navbar-item:hover {
-  color: rgb(170, 170, 170);
+#homeBody {
+  height: 110vh;
 }
 
-@media (max-width: 480px) {
-  nav {
-    display: none;
+#main #welcomeSection {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 1em;
+  height: 70vh;
+  justify-content: center;
+}
+#main #welcomeSection .welcomeHeading {
+  font-size: 2.8em;
+}
+#main #welcomeSection .welcomeParagraph {
+  font-size: 1.3em;
+}
+#main #welcomeSection .welcomeParagraph br {
+  display: none;
+}
+#main #welcomeSection #btn-area {
+  display: flex;
+  gap: 1em;
+}
+#main #welcomeSection #btn-area button {
+  cursor: pointer;
+  border: none;
+  border-radius: 9px;
+  padding: 11px;
+  font-size: 16px;
+}
+
+@media only screen and (min-width: 768px) {
+  #main #welcomeSection {
+    text-align: center;
+    align-items: center;
+  }
+  #main #welcomeSection .welcomeHeading {
+    font-size: 52px;
+  }
+  #main #welcomeSection .welcomeParagraph {
+    font-size: 1.2em;
+  }
+  #main #welcomeSection .welcomeParagraph br {
+    display: block;
+  }
+  #main #welcomeSection #btn-area button {
+    font-size: 1.2em;
   }
 }
-@media (max-width: 1174px) {
+@media only screen and (min-width: 1280px) {
+  #main #welcomeSection .welcomeHeading {
+    font-size: 3.75em;
+  }
+  #main #welcomeSection .welcomeParagraph {
+    font-size: 22px;
+  }
+}
+main {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+main #about-us {
+  cursor: default;
+  display: flex;
+  flex-direction: column;
+}
+main #about-us .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+main #about-us .row .box {
+  margin: 10px;
+  padding: 40px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+main #about-us .row .box .heading {
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+main #about-us .row .box .detail {
+  font-size: 18px;
+}
+
+@media only screen and (min-width: 992px) {
+  main {
+    margin: 30px;
+  }
+  main #about-us .row {
+    flex-wrap: nowrap;
+  }
+  main #about-us .row .box {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transition: 0.7s;
+    justify-content: center;
+  }
+  main #about-us .row .box:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  main #about-us .row .box .heading {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  main #about-us .row .box .detail {
+    font-size: 22px;
+  }
+}
+#humburgur-menu {
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: end;
+  padding-right: 30px;
+  height: 10vh;
+}
+#humburgur-menu button {
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  font-size: 28px;
+}
+
+#humburgur-menu-items {
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100vh;
+  display: none;
+}
+#humburgur-menu-items #menu {
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
+  list-style: none;
+  justify-content: center;
+  gap: 2em;
+  align-items: center;
+}
+#humburgur-menu-items #menu .menu-item {
+  text-decoration: none;
+  font-size: 32px;
+  color: gray;
+}
+
+nav {
+  display: none;
+}
+
+@media only screen and (min-width: 992px) {
+  #humburgur-menu {
+    display: none;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
   nav #navbar-logo {
     display: none;
   }
   nav #navbar {
-    justify-content: center;
-  }
-}
-@media (max-width: 847px) {
-  nav {
-    display: none;
-  }
-}
-/*----------------------------------------------------------*/
-main #welcomeSection {
-  padding: 250px;
-  text-align: center;
-  color: white;
-}
-main #welcomeSection .welcomeHeading {
-  font-size: 70px;
-  margin-bottom: 23px;
-}
-main #welcomeSection .welcomeParagraph {
-  font-size: 22px;
-}
-main #welcomeSection .welcomeParagraph .enchanted-font {
-  font-family: "Counter-Strike", "Fredoka", "Raleway", sans-serif;
-}
-main #welcomeSection .btn {
-  margin-right: 10px;
-  border: none;
-  border-radius: 12px;
-  background-color: rgb(230, 230, 230);
-  font-size: 18px;
-  padding: 15px;
-  transition: 0.7s;
-}
-main #welcomeSection .btn:hover {
-  background-color: white;
-}
-main #welcomeSection .btn a {
-  text-decoration: none;
-  color: black;
-}
-
-@media (max-width: 480px) {
-  .body {
+    list-style-type: none;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    gap: 4em;
   }
-  main #welcomeSection {
-    padding: 43px;
-    color: white;
-  }
-  main #welcomeSection .welcomeHeading {
-    font-size: 40px;
-    text-align: left;
-    margin-bottom: 23px;
-  }
-  main #welcomeSection .welcomeParagraph {
-    font-size: 15px;
-    margin-bottom: 23px;
-    text-align: left;
-  }
-  main #welcomeSection .welcomeParagraph .enchanted-font {
-    font-family: "Counter-Strike", "Fredoka", "Raleway", sans-serif;
-  }
-  main #welcomeSection .btn {
-    float: left;
-    width: 25em;
-    margin-bottom: 19px;
-    border: none;
-    border-radius: 12px;
-    background-color: rgb(230, 230, 230);
-    font-size: 14px;
-    padding: 15px;
+  nav #navbar .navbar-item {
+    font-size: 32px;
+    color: gray;
+    text-decoration: none;
     transition: 0.7s;
   }
-  main #welcomeSection .btn:hover {
-    background-color: white;
-  }
-  main #welcomeSection .btn a {
-    text-decoration: none;
-    color: black;
+  nav #navbar .navbar-item:hover {
+    color: rgb(200, 200, 200);
   }
 }
-@media (max-width: 430px) {
-  main #welcomeSection .btn {
-    width: 218px;
-  }
-}
-@media (max-width: 1408px) {
-  main #welcomeSection {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-  main #welcomeSection .welcomeHeading {
-    font-size: 52px;
-  }
-  main #welcomeSection .welcomeParagraph {
-    font-size: 16px;
-  }
-  main #welcomeSection .btn {
-    font-size: 16px;
-  }
-}
-@media (max-width: 1174px) {
-  main #welcomeSection {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-  main #welcomeSection .welcomeHeading {
-    font-size: 58px;
-  }
-  main #welcomeSection .welcomeParagraph {
-    font-size: 18px;
-  }
-}
-@media (max-width: 847px) {
-  .body {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
+@media only screen and (min-width: 1280px) {
+  nav {
+    justify-content: space-between;
     align-items: center;
   }
-  main #welcomeSection {
-    padding-left: 30px;
-    padding-right: 30px;
+  nav #navbar-logo {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 42px;
   }
-  main #welcomeSection .welcomeHeading {
-    font-size: 52px;
-  }
-  main #welcomeSection .welcomeParagraph {
-    font-size: 16.4px;
-  }
-  main #welcomeSection .btn {
-    font-size: 15px;
+  nav #navbar {
+    justify-content: end;
   }
 }
-/*----------------------------------------------------------*/
-main #sloganContainer {
-  padding: 100px;
-}
-main #sloganContainer #sloganBannerContainer {
-  position: relative;
-  text-align: center;
-}
-main #sloganContainer #sloganBannerContainer img {
-  width: 70%;
-  border-radius: 12px;
-}
-main #sloganContainer #sloganBannerContainer #slogan {
-  cursor: default;
-  color: white;
-  padding: 20px;
-  background-color: rgba(0, 0, 0, 0.8);
-  font-size: 32px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transition: 0.7s;
-}
-main #sloganContainer #sloganBannerContainer #slogan:hover {
-  background-color: rgba(0, 0, 0, 0.9);
-  border-radius: 12px;
-}
-main #about-us .row {
-  display: flex;
-  justify-content: center;
-}
-main #about-us .row .container {
-  cursor: default;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 1000px;
-  height: 300px;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.8);
-  color: rgb(202, 202, 202);
-  margin-bottom: 10px;
-  margin: 30px;
-  padding: 40px;
-  transition: 0.7s;
-}
-main #about-us .row .container:hover {
-  border-radius: 12px;
-  background-color: rgba(0, 0, 0, 0.9);
-  color: white;
-}
-main #about-us .row .container h1 {
-  font-size: 48px;
-  margin-bottom: 20px;
-}
-main #about-us .row .container p {
-  font-size: 19px;
-}
-
-/*----------------------------------------------------------*/
 footer {
   background-color: rgba(0, 0, 0, 0.8);
   color: #fff;
-  margin: 30px;
-  padding: 100px;
+  padding: 60px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 footer .footer-contact h3 {
-  font-size: 32px;
+  font-size: 24px;
 }
 footer .footer-contact p {
   margin: 5px 0;
+}
+footer .footer-follow h3 {
+  font-size: 24px;
 }
 footer .footer-follow ul {
   list-style: none;
@@ -287,6 +234,12 @@ footer .footer-follow ul {
 footer .footer-follow li {
   display: inline-block;
   margin-right: 10px;
+}
+footer .footer-follow li a {
+  color: white;
+}
+footer .footer-info {
+  margin-top: 30px;
 }
 footer .footer-info p {
   margin: 10px 0;
@@ -300,6 +253,13 @@ footer .footer-info li {
   display: inline-block;
   margin-right: 10px;
 }
+footer .footer-info li a {
+  color: white;
+}
+footer .footer-nav h3 {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
 footer .footer-nav ul {
   list-style: none;
   padding: 0;
@@ -312,4 +272,11 @@ footer .footer-nav li {
 footer .footer-nav a {
   color: #fff;
   text-decoration: none;
+}
+
+@media only screen and (min-width: 992px) {
+  footer {
+    margin: 20px;
+    align-items: center;
+  }
 }/*# sourceMappingURL=style.css.map */
